@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.bottom{
+    
+    
+    margin: 2em 3em;
+    
+
+}
+.card{
+    
+    width:min-content;
+    
+    /* padding: 1em; */
+}
+.card img{
+    width: 260px;
+}
+.info{
+    text-align: start;
+    margin: 0.5em;
+}
+.folder{
+    display: grid;
+    grid-template-columns:repeat(3,1fr) ;
+    margin: 1em 5em;
+
+}
+@media screen and (max-width:768px){
+    .folder{
+        display: grid;
+        grid-template-columns:1fr 1fr;
+        margin:0
+}
+}

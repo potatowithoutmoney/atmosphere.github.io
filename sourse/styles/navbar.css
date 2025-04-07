@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* @import url('https://fonts.googleapis.com/css2?family=Kirang+Haerang&display=swap');
+body{
+    font-family: "Kirang Haerang", system-ui;
+} */
+
+
+a {
+    text-decoration: none;
+    color: black
+}
+
+.nav-bar {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.nav-brand {
+    font-size: 2rem;
+    padding: 1.5rem;
+}
+
+
+.navlinks {
+    display: grid;
+    grid-auto-flow: column;
+    list-style: none;
+    column-gap: 3rem;
+    justify-items: center;
+    font-size: 1.5rem;
+}
+.navlinks a{
+    display: block;
+    padding: 0.4em;
+}
+.navlinks a:hover {
+    background-color: rgb(199, 199, 199);
+}
+
+.contacts {
+    display: grid;
+    list-style: none;
+    grid-auto-flow: column;
+    column-gap: 2rem;
+}
+
+img {
+    height: 3rem;
+}
+
+.nav-btn{
+    display: none;
+}
+@media screen and (max-width:768px) {
+    /* навигац панель */
+    .nav-bar {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        justify-items: end;
+        
+
+
+    }
+
+    .contacts{
+        order: -1;
+    }
+    
+
+    .nav-brand {
+        display: none;
+    }
+
+    .navlinks {
+        display: none;
+    }
+
+    .drop:hover .navlinks {
+        display: block;
+        position: fixed;
+        top: 0;
+       right:50px;
+       
+    }
+
+    .nav-btn {
+       
+        display: block;
+        font-size: 2em;
+        padding-inline: 10px;
+        padding-bottom: 3px;
+        border: none;
+        color: black;
+        cursor: pointer;
+        
+
+    }
+
+    .nav-btn:hover {
+        background-color: rgb(219, 219, 219);
+    }
+     /*конец нав панели */
+     
+    
+    
+    
+}
